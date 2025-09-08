@@ -1,0 +1,104 @@
+/* Push content below fixed navbars */
+body {
+  padding-top: 70px;    /* keeps content below top navbar */
+  padding-bottom: 70px; /* keeps content above bottom navbar */
+}
+
+/* Profile Circle */
+.profile-circle {
+  width: 35px;
+  height: 35px;
+  background: black;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* Menu Icon */
+.menu-icon {
+  width: 35px;
+  height: 35px;
+  background: #f2f2f2;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* Book Button */
+.book-btn {
+  width: 100%;
+  background: black;
+  color: yellow;
+  font-weight: bold;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+}
+.book-btn:hover {
+  background: #333;
+}
+
+/* Toggle Icon */
+.toggle-icon {
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: black;
+}
+
+/* Desktop Navbar Links */
+.navbar-nav .nav-link {
+  color: black !important;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+.navbar-nav .nav-link i {
+  font-size: 1.2rem;
+  color: black;
+}
+.navbar-nav .nav-link.active {
+  color: #f1c40f !important; /* yellow active */
+}
+
+/* Parking card details stack */
+.parking-card .details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.2;
+}
+.parking-card .details strong {
+  margin-bottom: 2px;
+}
+
+/* Bottom Navbar */
+.bottom-nav {
+  background: #fff;
+  border-top: 1px solid #ddd;
+}
+.bottom-nav .nav-link {
+  color: black !important;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.bottom-nav .nav-link.active {
+  color: #f1c40f !important; /* yellow active */
+}
+.bottom-nav i {
+  font-size: 1.4rem;
+  margin-bottom: 2px;
+  color: black;
+}
+
+/* Mobile Filter button */
+.btn-light {
+  font-weight: 500;
+}
