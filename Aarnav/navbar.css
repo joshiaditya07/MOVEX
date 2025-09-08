@@ -1,0 +1,8 @@
+.brand span {
+  color: #facc15; /* Yellow X */
+}
+
+.navbar-nav .nav-link.active {
+  font-weight: bold;
+  color: #facc15 !important;
+}
