@@ -1,0 +1,37 @@
+/* Branding */
+.brand span { color: #facc15; } /* Yellow X */
+
+/* Mobile bottom nav */
+.bottom-nav a {
+  flex: 1;
+  text-align: center;
+  padding: 8px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: black;
+}
+.bottom-nav a.active {
+  color: #facc15;
+  font-weight: bold;
+}
+
+/* Filters & Cards */
+.filter-box { 
+  background: #f8f9fa; 
+  padding: 1rem; 
+  border-radius: 0.5rem; 
+}
+.card-custom { 
+  background: #f3f4f6; 
+}
+.book-btn { 
+  background: black; 
+  color: #facc15; 
+  font-weight: bold; 
+}
+
+/* Spacing with fixed navbars */
+body {
+  padding-top: 70px;   /* Adjust for top navbar */
+  padding-bottom: 60px; /* Adjust for bottom nav */
+}
