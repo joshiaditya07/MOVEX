@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Parking - Navbar</title>
+  <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+
+  <!-- 🌐 Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="logo.png" alt="Smart Parking Logo" class="nav-logo">
+      <span class="logo-text">SmartParking</span>
+    </div>
+
+    <!-- Navigation Links -->
+    <ul class="nav-links" id="navLinks">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="booking.html">Book Slot</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="signup.html">Sign Up</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <!-- Hamburger Menu (Mobile) -->
+    <div class="hamburger" id="hamburger">☰</div>
+  </nav>
+
+  <script>
+    // Toggle mobile menu
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("navLinks");
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("show");
+    });
+  </script>
+
+</body>
+</html>

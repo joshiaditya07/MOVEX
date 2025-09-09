@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Parking - Book Slot</title>
+  <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="booking-container">
+      <h2>🚘 Book a Parking Slot</h2>
+      <form>
+        <label for="slot">Select Parking Slot</label>
+        <select id="slot" name="slot" required>
+          <option value="">--Choose Slot--</option>
+          <option value="A1">Slot A1</option>
+          <option value="A2">Slot A2</option>
+          <option value="B1">Slot B1</option>
+          <option value="B2">Slot B2</option>
+          <option value="C1">Slot C1</option>
+        </select>
+
+        <label for="vehicle">Vehicle Number</label>
+        <input type="text" id="vehicle" name="vehicle" placeholder="e.g. ABC-1234" required>
+
+        <label for="date">Booking Date</label>
+        <input type="date" id="date" name="date" required>
+
+        <div class="time-grid">
+          <div>
+            <label for="timeStart">Start Time</label>
+            <input type="time" id="timeStart" name="timeStart" required>
+          </div>
+          <div>
+            <label for="timeEnd">End Time</label>
+            <input type="time" id="timeEnd" name="timeEnd" required>
+          </div>
+        </div>
+
+        <button type="submit">Confirm Booking</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
