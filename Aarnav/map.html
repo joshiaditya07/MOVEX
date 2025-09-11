@@ -2,30 +2,57 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Map - MOVE-X Parking</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MOVE-X Map</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="map.css">
 </head>
 <body>
-  <!-- Same Navbar -->
-  <nav class="navbar navbar-expand-md navbar-light bg-light border-bottom fixed-top">
-    <div class="container">
-      <a class="navbar-brand fw-bold fs-3" href="index.html">MOVE<span class="brand">X</span></a>
-      <div class="collapse navbar-collapse">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link active" href="map.html">Map</a></li>
-          <li class="nav-item"><a class="nav-link" href="booking.html">Booking</a></li>
-          <li class="nav-item"><a class="nav-link" href="support.html">Support</a></li>
-          <li class="nav-item"><a class="nav-link" href="profile.html">👤</a></li>
-        </ul>
+  <!-- Navbar -->
+  <div id="navbar"></div>
+
+  <!-- Main Layout -->
+  <div class="main-container">
+    <!-- Parking List -->
+    <div class="sidebar">
+      <div class="parking-card">
+        <h5>Hope Hospital Parking</h5>
+        <p>0.51 km away <br> Available: 24/7</p>
+        <p><i class="bi bi-bicycle"></i> Available: 3/9 two-wheeler slots<br>
+           Charges: Rs 5 (first 30 mins)</p>
+        <p><i class="bi bi-car-front"></i> Available: 1/4 four-wheeler slots<br>
+           Charges: Rs 10 (first 30 mins)</p>
+        <button class="btn btn-warning btn-sm w-100">BOOK NOW</button>
+      </div>
+
+      <div class="parking-card">
+        <h5>Eleven Restro Parking</h5>
+        <p>1.2 km away <br> Available: 6am – 9pm</p>
+      </div>
+
+      <div class="parking-card">
+        <h5>Private Land Near KMC</h5>
+        <p>0.95 km away <br> Available: 6am – 9pm</p>
+      </div>
+
+      <div class="parking-card">
+        <h5>Near Eleven Restro</h5>
+        <p>1.1 km away <br> Available: 6am – 5pm</p>
       </div>
     </div>
-  </nav>
 
-  <main class="container py-5">
-    <h1 style="padding-top: 20px">Find Parking on Map</h1>
-    <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="400" style="border:0;" allowfullscreen loading="lazy"></iframe>
-  </main>
+    <!-- Map -->
+    <div class="map-area">
+      <div class="map-placeholder">MAP AREA</div>
+    </div>
+  </div>
+
+  <!-- Load Navbar -->
+  <script>
+    fetch("navbar.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("navbar").innerHTML = data);
+  </script>
 </body>
 </html>
